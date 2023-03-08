@@ -1,0 +1,27 @@
+<header>
+    <div class="logo">Unfazed-Soundrack</div>
+    <div (click)="toggleClass()" class="hamburger">   <!-- Ici, la méthode toggleClass est appelé lors de claque clique ce le div qui reprèsente le hamburger de mon navbar -->
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar" [ngClass]="{'active': isSecondClassActive }">             <!-- Ici, Si isSecondClassActive est vrai, alors, le css active s'insère. -->
+        <ul>
+            <li>
+                <a href="" class="active">Home</a>
+            </li>
+            <li>
+                <a href="" class="">Musical-Style</a>
+            </li>
+            <li>
+                <a href="" class="">Musical-Tendance</a>
+            </li>
+            <li>
+                <a href="" class="">World-Classement</a>
+            </li>
+            <li>
+                <a href="" class="">About</a>
+            </li>
+        </ul>
+    </nav>
+</header>
